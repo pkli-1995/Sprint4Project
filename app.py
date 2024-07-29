@@ -3,8 +3,7 @@ import pandas as pd
 import plotly.express as px
 import os
 
-file_path = os.path.join('C:\\Users\\pimsi\\OneDrive\\Documents\\GitHub\\Sprint4Project\\Dataset', 'vehicles_us_modified.csv')  # Update with your actual path
-
+file_path = os.path.join('Dataset/vehicles_us_modified.csv')
 vehicles = pd.read_csv(file_path)
 
 st.header("Used Vehicle List Data Analysis")
