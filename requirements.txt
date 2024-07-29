@@ -37,7 +37,7 @@ pandas==2.2.2
 parso==0.8.4
 patsy==0.5.6
 pillow==10.4.0
-pipenv @ file:///C:\Users\pimsi\AppData\Local\Programs\Python\Python312\Scripts
+pipenv @ file:///C:\Users\pimsi\Downloads
 platformdirs==4.2.2
 plotly==5.23.0
 plotly-express==0.4.1
