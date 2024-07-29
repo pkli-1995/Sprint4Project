@@ -10,7 +10,7 @@ st.header("Used Vehicle List Data Analysis")
 st.dataframe(vehicles)
 
 st.header("Totol Amount of Car Based on Condition in Each Make")
-fig1 = px.histogram(df, x="make", animation_frame = 'condition')
+fig1 = px.histogram(vehicles, x="make", animation_frame = 'condition')
 
 fig1.update_layout(
     title="Total of Cars' Condition by Make",
@@ -21,7 +21,7 @@ fig1["layout"].pop("updatemenus")
 st.plotly_chart(fig1)
 
 st.header("Total Amount of the Types of Car with Each Make")
-fig2 = px.histogram(df, x="make", animation_frame = 'type')
+fig2 = px.histogram(vehicles, x="make", animation_frame = 'type')
 
 fig2.update_layout(
     title="Amount of Make Within Each Type",
@@ -32,7 +32,7 @@ fig2["layout"].pop("updatemenus")
 st.plotly_chart(fig2)
 
 st.header("Prices Compared to the Odometer of Each Make Listed")
-fig3 = px.histogram(df, x="type", animation_frame = 'make')
+fig3 = px.histogram(vehicles, x="type", animation_frame = 'make')
 
 fig3.update_layout(
     title="Types of Car in each Make",
@@ -43,7 +43,7 @@ fig3["layout"].pop("updatemenus")
 st.plotly_chart(fig3)
 
 st.header("Prices Compared to the Model Year of Each Make Listed")
-fig4 = px.scatter(df, x='price', y='odometer', animation_frame ='condition')
+fig4 = px.scatter(vehicles, x='price', y='odometer', animation_frame ='condition')
 
 fig4.update_layout(
     title="Price vs Odometer by Condition",
@@ -55,7 +55,7 @@ fig4["layout"].pop("updatemenus")
 st.plotly_chart(fig4)
 
 st.header("Model Year and Price with their Condition")
-fig5 = px.scatter(df, x='model_year', y='price', animation_frame='condition')
+fig5 = px.scatter(vehicles, x='model_year', y='price', animation_frame='condition')
 
 fig5.update_layout(
     title="Model Year vs Price by Condition",
