@@ -64,7 +64,7 @@ fig5.update_layout(
     height = 500
 )
 fig5["layout"].pop("updatemenus") 
-st.plotly_cahrt(fig5)
+st.plotly_chart(fig5)
 
 st.header('Compare Model Years of Car Between Make')
 if st.checkbox('Show only cars before Model Year 2000'):
